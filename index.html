@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            font-family: "Roboto Mono", monospace;
+            color: #fff;
+            background: url('./assets/bgr.jpg') no-repeat center center / cover fixed;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        #container h1 {
+            font-size: 6rem;
+            letter-spacing: 30px;
+            margin: 0;
+        }
+
+        #container h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        #container p {
+            font-size: 14px;
+            letter-spacing: 7px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        #container .content {
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        #container .overlay {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.4);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        #container a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: transparent;
+            width: 250px;
+            height: 40px;
+            line-height: 40px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            margin: 0 auto;
+         
+        }
+
+        #container a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 480px) {
+            #container h1 {
+                font-size: 4rem;
+                letter-spacing: 8px;
+            }
+
+            #container h3 {
+                font-size: 1.3rem;
+            }
+
+            #container p{
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main id="container">
+        <div class="content">
+            <h1>Welcome</h1>
+            <h3>To my website</h3>
+            <p>Click this and to jump</p>
+            <a href="https://github.com/HieuTrann18">My Github</a>
+        </div>
+        <div class="overlay">
+
+        </div>
+    </main>
+</body>
+
+</html>
