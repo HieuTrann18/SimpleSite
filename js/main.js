@@ -9,8 +9,8 @@ export const initCircle = () => {
         let radius = Math.random() * 3 + 1
         let x = Math.random() * (canvas.width - 2 * radius) + radius
         let y = Math.random() * (canvas.height - 2 * radius) + radius
-        let dx = (Math.random() - 0.5) * 2
-        let dy = (Math.random() - 0.5) * 2
+        let dx = (Math.random() - 0.5) * 1
+        let dy = (Math.random() - 0.5) * 1
         circleArray.push(new Circle(x,y,dx,dy,radius))
     }
 }
